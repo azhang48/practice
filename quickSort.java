@@ -20,11 +20,16 @@ public class quickSort
         }
         else
         {
-            int[] returnArr = new int[arrIn.length];
-            int[] recursedArr = new int[arrIn];
-            returnArr[arrIn.length + 1] = 0;
-            
-            return returnArr;
+            int pivot = arrIn[getPivotIndex(arrIn)];
+            for(int i=0; i<arrIn.length; i++)
+            {
+                for(int j=0;j<arrIn.length; j++)
+                {
+                    
+                }
+            }
+
+            return arrIn;
         }
     }
 
@@ -36,7 +41,7 @@ public static void swapVals(int[] arrIn, int offset1, int offset2)
     arrIn[offset2] = temp;
 }
 
-    public int getPivotIndex(int[] arrIn) //Gets a index inbounds to be a pivot point
+    public static int getPivotIndex(int[] arrIn) //Gets a index inbounds to be a pivot point
     {
         int pivotIndex = (int)(Math.random()*arrIn.length);
         return pivotIndex;
