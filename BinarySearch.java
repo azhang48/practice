@@ -14,7 +14,7 @@ public class BinarySearch
         insertionSort(vals);
         printArr(vals);
 
-        //Get User Input
+        //Give array info, get User Input
         System.out.printf("%n%n%s %d%n%s ", "Array of size", vals.length,"What number do you want to search for?");
         int target = in.nextInt();
         System.out.printf("%s %d%n%n", "Searching for:", target);
